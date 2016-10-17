@@ -1,1 +1,5 @@
 node_modules
+typings
+.eslintrc.json
+typings.json
+.vscode

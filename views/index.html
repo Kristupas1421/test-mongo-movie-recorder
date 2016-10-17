@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Movie entries into local db</title>
+</head>
+
+<body>
+	<h1>Hello user from {{ip}} ip address!!</h1>
+	<form action="addMovie" method="POST">
+        <p>
+        {% for item in params %} 
+            {{item.name}} <input type="{{item.type}}" name="{{item.name}}" value=""/>
+        {% endfor %}
+        </p>
+        <input type="submit" value="Submit">      
+    </form>
+
+
+</body>
+
+</html>
